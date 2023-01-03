@@ -1,0 +1,133 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+@font-face {
+    font-family: Bree;
+    src: url(assets/BreeSerif-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Kaushan Script';
+    src: url(assets/KaushanScript-Regular.ttf);
+}
+
+nav {
+    background: url(assets/images/vert-blue-wood.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: Bree;
+    text-align: center;
+    padding: 2rem 1rem!important;
+    box-shadow: 0px 5px 10px black;
+    z-index: 1;
+}
+
+.banner-top {
+    background-color: #2a5a73;
+    height: 6vh;
+    margin: 0 0;
+    padding: 1vh;
+    text-align: center;
+    box-shadow: 0px 5px 5px black;
+    position: relative;
+    z-index: 2;
+    color: white;
+    font-family: Bree;
+}
+
+.navbar-toggler {
+    border: none!important;
+}
+
+.fa-bars {
+    color: white;
+}
+
+.carousel-item > img {
+    width: 150%!important;
+    height: 25vh;
+}
+
+.main {
+    background-color: #2a5a73;
+    font-family: Bree;
+    text-align: center;
+    color: white;
+    box-shadow: 0px 5px 15px black;
+    padding: 1.5rem .5rem;
+}
+
+.banner-home {
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+.content {
+    font-size: 1.5rem;
+}
+
+.para {
+    padding-bottom: .5rem;
+}
+
+
+footer {
+    background: url(assets/images/vert-blue-wood.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    position: relative;
+    z-index: -1;
+    text-align: center;
+    padding: 1.5rem 0;
+    font-family: Bree;
+}
+
+footer h2 {
+    font-family: 'Kaushan Script';
+}
+
+footer hr {
+    border-top: 5px dotted white;
+    width: 60%;
+}
+
+#foot-logo {
+    padding: 3rem 0 2rem;
+}
+
+#twitter {
+    margin: 1rem;
+}
+
+#twitter h2 {
+    margin: 1.25rem 0;
+}
+
+#tweet-btn a {
+    background-color: #a2c6e7;
+    box-shadow: 0px 3px 10px 0px rgb(38 36 25 / 40%), 0px 2px 0px 0px rgb(255 255 255 / 30%) inset;
+    color: #043150;
+    padding: .4rem;
+    border-radius: 1vh;
+}
+
+#tweet-btn i {
+    padding-right: .5rem;
+}
+
+#googleMap {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 15rem;
+    background-color: grey;
+}
+
+#copyright {
+    margin: 1rem 0 .5rem;
+}
