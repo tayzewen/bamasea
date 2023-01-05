@@ -125,7 +125,7 @@ nav a:hover {
 }
 
 .history {
-    background: url(assets/images/background-3.jpg) fixed no-repeat top center;
+    background: url(assets/images/background-3.jpg) no-repeat top center;
     background-size: auto;
     padding: 1rem;
 }
