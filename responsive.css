@@ -1,0 +1,140 @@
+/* // X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap */
+
+
+/* // Small devices up to 768px */
+@media (max-width: 768px) { 
+    .banner-home {
+        padding: 1.5rem .8rem;
+        margin: 1.5rem 1rem;
+        margin-top: -2.5rem;
+        background-color: rgba(255, 255, 255, 0.4);
+        backdrop-filter: blur(28px);
+        box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 8px;
+        font-size: 1.4rem;
+        color: #14273e;
+    }
+}
+
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    .carousel-item > img {
+        width: 150%!important;
+        height: 35vh;
+    }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .carousel-item > img {
+        width: 100%!important;
+        height: auto;
+    }
+
+    #googleMap {
+        width: 65%;
+    }
+
+    .banner-home {
+        font-size: 1.5rem;
+        padding-top: 1.2rem;
+        min-height: 5rem;
+        background: url(assets/images/hdr-1-a.png) no-repeat;
+        background-position: top center;
+        background-size: 773px 95px;
+        margin: .5rem 0 1.5rem;
+        margin-top: -1rem;
+
+    }
+
+    .content-home {
+        font-size: 2rem;
+        padding: 1rem 2rem;
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .carousel-item > img {
+        width: 100%!important;
+    }
+
+    nav li {
+        font-size: 1.3rem;
+    } 
+    
+    footer hr {
+        display: none;
+    }
+
+    .foot-container {
+        display: grid!important;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    #googleMap {
+        width: 40%;
+        height: 20rem;
+        grid-column: 2;
+        width: 100%;
+    }
+
+    #twitter {
+        grid-column: 3;
+    }
+
+    #foot-logo {
+        grid-row: 1;
+        grid-column: 2;
+        padding: 1.25rem 0 0;
+    }
+
+    .contact {
+        margin: 1rem;
+    }
+
+    #navbarNavDropdown {
+        display: flex!important;
+        justify-content: space-around!important;
+    }
+
+    .banner-home {
+        min-height: 5.625rem;
+        background: url(assets/images/hdr-1-a.png) no-repeat;
+        background-position: top center;
+        background-size: initial;
+    }
+
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    .carousel-item > img {
+        width: 100%!important;
+    }
+
+    nav li {
+        margin-left: 1.2rem;
+    }
+
+    .banner-home {
+        padding-top: 1.4rem;
+    }
+
+}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+    .carousel-item > img {
+        width: 100%!important;
+    }
+
+    nav li {
+        margin-left: 2rem;
+    }
+
+}
