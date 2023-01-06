@@ -13,6 +13,11 @@ body, html {
     src: url(assets/KaushanScript-Regular.ttf);
 }
 
+@font-face {
+    font-family: 'Nimbus Sans Reg';
+    src: url(assets/NimbusSanL-Reg.otf);
+}
+
 nav {
     background: url(assets/images/vert-blue-wood.png);
     background-size: cover;
@@ -35,6 +40,11 @@ nav a:hover {
 
 .active {
     color: #F4F4F4!important;
+}
+
+.subactive {
+    color: #14273e!important;
+    background-color: #FBFBFB!important;
 }
 
 .dropdown-menu {
@@ -124,17 +134,22 @@ nav a:hover {
     padding-bottom: 1rem;
 }
 
-.history {
+.about {
     background: url(assets/images/background-3.jpg) no-repeat top center;
-    background-size: auto;
-    padding: 1rem;
+    background-size: cover;
+    padding: 2rem 1rem;
+}
+
+.subheading h2 {
+    margin: 1rem 0 1.5rem;
+    padding-top: .2rem;
+    text-shadow: 2px 2px 5px #1C1C1C;
 }
 
 .content-about {
-    font-family: aktiv-grotesk,sans-serif;
-    font-weight: 500;
+    font-family: 'Nimbus Sans Reg';
+    font-weight: 600;
     font-style: normal;
-    letter-spacing: 1px;
     color: #14273e;
     background-color: rgba(251, 251, 251, .8);
     box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
@@ -143,16 +158,80 @@ nav a:hover {
     padding: 1rem;
 }
 
-#history > .para {
+.content-about > .para {
     text-align: left;
 }
 
 #boats-img {
     width: 100%;
     height: auto;
-    padding-bottom: 2rem;
+    border-radius: 4px;
+    box-shadow: 2px 2px 5px #555454;
 }
 
+#quality > .para img {
+    float:  right;
+    margin-left: .5rem;
+    border-radius: 4px;
+}
+
+.para h2 {
+    font-family: Bree;
+}
+
+#small-caps {
+    font-variant: small-caps;
+    font-size: 1.3rem;
+    line-height: 1.1rem;
+}
+
+.para ul {
+    font-weight: 400;
+}
+
+#bold {
+    font-weight: 600;
+}
+
+#all-small-caps {
+    font-variant: all-small-caps;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+#mission-state {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#ital-big {
+    font-style: italic;
+    font-size: 1.5rem;
+}
+
+#underline {
+    text-decoration: underline;
+}
+
+.top-links {
+    background-color: #94AEC7;
+}
+
+#intro {
+    margin-bottom: 2rem;
+}
+
+#products img {
+    float: right;
+}
+
+#products h2 {
+    margin-bottom: 1rem;
+}
+
+#unbold {
+    font-weight: 400;
+}
 
 footer {
     background: url(assets/images/vert-blue-wood.png);
