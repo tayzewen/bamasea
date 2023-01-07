@@ -223,9 +223,10 @@ nav a:hover {
 
 #products img {
     float: right;
+    padding: 1.5rem .5rem;
 }
 
-#products h2 {
+#products, #sustain h2 {
     margin-bottom: 1rem;
 }
 
