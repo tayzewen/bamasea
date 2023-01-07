@@ -2,7 +2,6 @@
 
 $name = $_POST['name'];
 $email = $_POST['email'];
-$subject = $_POST['subject'];
 $message = $_POST['message'];
 
 require "vendor/autoload.php";
@@ -20,12 +19,12 @@ $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 $mail->Port = 587;
 
 $mail->Username = "tayzewen@gmail.com";
-$mail->Password = "quoiwqxmnrraluqi";
+$mail->Password = "";
 
 $mail->SetFrom($email, $name);
 $mail->addAddress("taylor@taylorzewen.com");
 
-$mail->Subject = $subject;
+$mail->Subject = "New Bama Message";
 $mail->Body = $message;
 
 $mail->send();

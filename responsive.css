@@ -89,6 +89,12 @@
         width: 75%;
     }
 
+    #contact-form {
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
 
 }
 
@@ -174,6 +180,19 @@
         padding: 3rem;
     }
 
+    #contact-form {
+        width: 55%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .form-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    
+
 }
 
 /* // X-Large devices (large desktops, 1200px and up) */
@@ -189,6 +208,7 @@
     .banner-home {
         padding-top: 1.4rem;
     }
+
 
 }
 
