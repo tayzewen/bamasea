@@ -5,15 +5,31 @@ $email = $_POST['email'];
 $subject = $_POST['subject'];
 $message = $_POST['message'];
 
-$mailheader = "From:".$name."<".$email.">\r\n";
+require "vendor/autoload.php";
 
-$recipient = "taylor@taylorzewen.com";
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
 
-mail($recipient, $subject, $message, $mailheader)
-or die("Error");
+$mail = new PHPMailer(true);
 
-echo"message send";
+$mail->isSMTP();
+$mail->SMTPAuth = true;
 
+$mail->Host = "smtp.gmail.com";
+$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+$mail->Port = 587;
 
+$mail->Username = "tayzewen@gmail.com";
+$mail->Password = "quoiwqxmnrraluqi";
+
+$mail->SetFrom($email, $name);
+$mail->addAddress("taylor@taylorzewen.com");
+
+$mail->Subject = $subject;
+$mail->Body = $message;
+
+$mail->send();
+
+echo "email sent";
 
 ?>
