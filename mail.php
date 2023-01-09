@@ -18,8 +18,11 @@ $mail->Host = "smtp.gmail.com";
 $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 $mail->Port = 587;
 
-$mail->Username = "tayzewen@gmail.com";
-$mail->Password = "";
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv->load();
+
+$mail->Username = $_ENV['Username'];
+$mail->Password = $_ENV['Password'];
 
 $mail->SetFrom($email, $name);
 $mail->addAddress("taylor@taylorzewen.com");
