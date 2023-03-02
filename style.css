@@ -234,6 +234,15 @@ nav a:hover {
     font-weight: 400;
 }
 
+.resources {
+    display: flex;
+    flex-direction: column;
+}
+
+.resources a {
+    padding-bottom: .5rem;
+}
+
 #contactpage h2 {
     font-family: 'Kaushan Script';
     font-size: 3rem;
